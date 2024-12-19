@@ -1,0 +1,233 @@
+/* General Reset */
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Membership Container */
+.membership-container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Membership Card */
+.membership-card {
+    background: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Member Info */
+.member-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Expired Membership Message */
+.membership-expired {
+    margin-top: 20px;
+    background-color: #ffefef;
+    padding: 15px;
+    border: 1px solid #ffcccc;
+    border-radius: 5px;
+}
+
+.membership-expired button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership-expired button:hover {
+    background-color: #ff4500;
+}
+
+/* Active Membership Message */
+.membership-active {
+    margin-top: 20px;
+    background-color: #e0ffe0;
+    padding: 15px;
+    border: 1px solid #c3e6c3;
+    border-radius: 5px;
+}
+
+.membership-active p {
+    color: #2d6a4f;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Container for Payment Form */
+.payment-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for Payment Form */
+.payment-container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Form Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #34495e;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Submit Button */
+.payment-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Success/Error Message for Payment */
+.success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.error-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Dropdown Design */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Hide elements dynamically */
+.hidden {
+    display: none;
+}
+
+/* Loading indicator style */
+#loading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .payment-container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
